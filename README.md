@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/6m7nkwet9bc8xfyj?svg=true)](https://ci.appveyor.com/project/MironovED/2-1-testing-webinterface)
