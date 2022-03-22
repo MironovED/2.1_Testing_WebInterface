@@ -14,7 +14,7 @@ public class WebInterfaceTest {
         $("[data-test-id=phone] input").setValue("+79008007755");
         $("[data-test-id=agreement]").click();
         $("[type=button]").click();
-        $("[data-test-id=order-success]").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(Condition.exactText("заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
     }
 
