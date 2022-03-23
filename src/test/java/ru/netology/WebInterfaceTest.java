@@ -102,7 +102,7 @@ public class WebInterfaceTest {
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
         $("[type=button]").click();
-        $("[class=input__sub]").shouldHave(Condition.exactText(""));
+        $("[class=input__sub]").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
         $(".input_invalid").find("[class=input__sub]").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
 
     }
