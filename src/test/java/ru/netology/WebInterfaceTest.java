@@ -103,11 +103,11 @@ public class WebInterfaceTest {
     }
 
     @Test
-    void shouldCheckBox() {
+    void shouldGetErrorIfUncheckedCheckbox() {
         $("[data-test-id=name] input").setValue("Антон Васильев");
-        $("[data-test-id=phone] input").setValue("+7(900)800-55-99");
-        $("[data-test-id=agreement]").click();
-        $("[data-test-id='agreement'].input_invalid").isDisplayed();
+        $("[data-test-id=phone] input").setValue("+79008005599");
+        $("[type=button]").click();
+        $("[data-test-id='agreement'].input_invalid").shouldBe(Condition.visible);
 
     }
 
